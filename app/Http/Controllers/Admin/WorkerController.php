@@ -14,8 +14,7 @@ class WorkerController extends Controller
      */
     public function index()
     {
-        $workers = Worker::orderBy('last_name')->paginate(10);
-        return view('pages.admin.workers.index', compact('workers'));
+        return view('pages.admin.workers.index');
     }
 
     /**
